@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 
-.container1 {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,18 @@
   margin-top: 70px;
 }
 
-.container2 {
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.content1 {
   height: 485;
   display: flex;
   flex-direction: row;
@@ -24,7 +35,7 @@
   margin-top: 70px;
 }
 
-.container3 {
+.content2 {
   margin-top: 130px;
   width: 100%;
   height: 540px;
@@ -36,7 +47,7 @@
   align-items: center;
 }
 
-.container4 {
+.content3 {
   width: 100%;
   height: 780px;
   display: flex;
@@ -46,7 +57,7 @@
   mix-blend-mode: normal;
 }
 
-.container5 {
+.content4 {
   width: 100%;
   height: 1840px;
   display: flex;
@@ -224,7 +235,7 @@
   margin-top: 10px;
 }
 
-.btn1 {
+.btnbid {
   height: 60px;
   width: 365px;
   padding: 20px 30px;
@@ -262,213 +273,4 @@
   order: 1;
   flex-grow: 0;
   margin-top: 10px;
-}
-
-.card {
-  width: 280px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border-radius: 12px;
-  margin: 0 10px;
-}
-
-.cardimg {
-  margin: 10px auto 0px auto;
-}
-
-.cardtitle {
-  margin-top: 14px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 15px;
-  color: #373737;
-  margin-left: 10px;
-}
-
-.carddes {
-  margin-top: 6px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #373737;
-  margin-left: 10px;
-}
-
-.cardprice {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 15px;
-  color: #373737;
-  margin-left: 10px;
-}
-
-.cardbtn {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.cardbtn1 {
-  width: 80px;
-  height: 36px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4.38824px 10.9706px;
-  gap: 10.97px;
-  background: #f5f5f5;
-  border-radius: 109.706px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10.9706px;
-  color: #373737;
-  line-height: 100%;
-  border: none;
-  margin-right: 6px;
-}
-
-.cardbtn2 {
-  width: 120px;
-  height: 36px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 9.78462px 19.5692px;
-  gap: 4.89px;
-  background: linear-gradient(114.51deg, #6bcb07 -12.5%, #06bfc9 94.9%);
-  border-radius: 30px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
-  color: #ffffff;
-  letter-spacing: 0.02em;
-  border: none;
-  margin-right: 23px;
-}
-
-.rank {
-  display: flex;
-  flex-direction: column;
-  margin: 0 25px;
-}
-
-.ranktitle {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  color: #373737;
-}
-
-.rankdropbtn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  color: #6bcb07;
-  margin-bottom: 14px;
-}
-
-.rankcard {
-  width: 365px;
-  height: 102px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ededed;
-}
-
-.rankstt {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 103%;
-  letter-spacing: -0.025em;
-  color: #000000;
-}
-
-.rankavt1 {
-  width: 60px;
-  height: 60px;
-  /* border-radius: 30px; */
-}
-
-.rankcheck {
-  position: absolute;
-  margin-left: 38px;
-}
-
-.rankbody {
-  width: 165px;
-  display: flex;
-  flex-direction: column;
-}
-
-.rankbodytitle {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  color: #373737;
-}
-
-.rankbodyprice {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 103%;
-  letter-spacing: -0.025em;
-  color: #6a6a6a;
-  margin-top: 12px;
-}
-
-.rankfooterc {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 103%;
-  text-align: right;
-  letter-spacing: -0.025em;
-  color: #6bcb07;
-}
-
-.rankfootert {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 103%;
-  text-align: right;
-  letter-spacing: -0.025em;
-  color: #f01866;
 }
