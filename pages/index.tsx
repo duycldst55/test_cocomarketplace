@@ -246,17 +246,32 @@ export default function Home() {
               />
             </div>
             <div className={styles.children4}>
-              {listhotdrops.map((hotdrops, index) => {
-                return <BidCard key={index} bidcard={hotdrops} />;
+              {listhotdrops.map((hotdrop, index) => {
+                return <BidCard key={index} bidcard={hotdrop} />;
               })}
             </div>
           </div>
           <div className={styles.content3}>
-            <TopListing toplisting={listtoplisting[0]} />
-            {/* <TopListing />
-            <TopListing /> */}
+            {listtoplisting.map((toplisting, index) => {
+              return <TopListing key={index} toplisting={toplisting} />;
+            })}
           </div>
-          <div className={styles.content4}></div>
+          <div className={styles.content4}>
+            <div className={styles.discovermore}>
+              <p className={styles.discover}>DISCOVER</p>
+              <div className={styles.more}>
+                <p className={styles.morechar}>MORE</p>
+                <Image
+                  src="/untitled_artwork(4)1.png"
+                  style={{ marginLeft: "15px" }}
+                  alt="img1"
+                  width={212}
+                  height={50}
+                />
+              </div>
+            </div>
+            <div className={styles.groupbtn}></div>
+          </div>
           <div className={styles.content5}></div>
         </div>
         <div className={styles.footer}></div>

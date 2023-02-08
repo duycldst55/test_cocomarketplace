@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "@/styles/TopListing.module.css";
 import Image from "next/image";
+import internal from "stream";
 
 // export interface TopListingProps {
 //   title: string;
@@ -47,27 +48,25 @@ export default function TopListing(props: any) {
         <p style={{ marginRight: "10px" }}>Last 7 days</p>
         <Image src="/Vector1.png" alt="img1" width={10} height={5} />
       </div>
-      {props.toplisting.top.map((item, i) => {
+      {props.toplisting.top.map((item: any, i: any) => {
         return (
           <div key={i} className={styles.rankcard}>
             <p className={styles.rankstt}>1</p>
             <div className={styles.rankcardavt1}>
-              <Image
-                className={styles.rankcheck}
-                src="/vector2.png"
-                alt="img1"
-                width={27}
-                height={27}
-              />
-              <Image
-                src="/unsplash_k0rVudBoB4c.png"
-                alt="img1"
-                width={60}
-                height={60}
-              />
+              {i === 0 ? (
+                <Image
+                  className={styles.rankcheck}
+                  src="/vector2.png"
+                  alt="img1"
+                  width={27}
+                  height={27}
+                />
+              ) : null}
+
+              <Image src={item.avatar} alt="img1" width={60} height={60} />
             </div>
             <div className={styles.rankbody}>
-              <p className={styles.rankbodytitle}>CryptoFunks</p>
+              <p className={styles.rankbodytitle}>{item.title}</p>
               <div className={styles.rankbodyprice}>
                 <Image
                   style={{ marginRight: "10px" }}
@@ -76,10 +75,17 @@ export default function TopListing(props: any) {
                   width={20}
                   height={20}
                 />
-                <p>19,769.39</p>
+                <p>{item.price}</p>
               </div>
             </div>
-            <p className={styles.rankfooterc}>+26.52%</p>
+            <p
+              className={
+                item.footer > 0 ? styles.rankfooterc : styles.rankfootert
+              }
+            >
+              {item.footer > 0 ? "+" : ""}
+              {item.footer}%
+            </p>
           </div>
         );
       })}
