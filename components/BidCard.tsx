@@ -36,7 +36,7 @@ export default function BidCard(props: BidCardProps) {
       <div className={styles.cardbtn}>
         <button className={styles.cardbtn1}>3h 50m 2s</button>
         <button className={styles.cardbtn2}>Bid Now</button>
-        <FavoriteIcon sx={{ color: " #F01866" }} />
+        <FavoriteIcon fontSize="large" sx={{ color: " #F01866" }} />
       </div>
     </div>
   );

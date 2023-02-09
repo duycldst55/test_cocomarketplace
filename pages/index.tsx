@@ -5,6 +5,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import BidCard from "@/components/BidCard";
 import TopListing from "@/components/TopListing";
+import FilterListIcon from "@mui/icons-material/FilterList";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -134,6 +135,100 @@ export default function Home() {
       ],
     },
   ]);
+
+  const [listcategory, setlistcategory] = useState([
+    {
+      title: "All Categories",
+    },
+    {
+      title: "Art",
+    },
+    {
+      title: "Celebrities",
+    },
+    {
+      title: "Múic",
+    },
+    {
+      title: "Photography",
+    },
+    {
+      title: "Sports",
+    },
+    {
+      title: "Trading Cards",
+    },
+    {
+      title: "Utility",
+    },
+    {
+      title: "Virtual Worlds",
+    },
+  ]);
+
+  const [listAmazeNFT, setlistAmazeNFT] = useState([
+    {
+      title: "Name of Collectible1",
+      description: "Name of Collectible1",
+      price: "0.251",
+    },
+    {
+      title: "Name of Collectible2",
+      description: "Name of Collectible2",
+      price: "0.252",
+    },
+    {
+      title: "Name of Collectible3",
+      description: "Name of Collectible3",
+      price: "0.253",
+    },
+    {
+      title: "Name of Collectible4",
+      description: "Name of Collectible3",
+      price: "0.253",
+    },
+    {
+      title: "Name of Collectible1",
+      description: "Name of Collectible1",
+      price: "0.251",
+    },
+    {
+      title: "Name of Collectible2",
+      description: "Name of Collectible2",
+      price: "0.252",
+    },
+    {
+      title: "Name of Collectible3",
+      description: "Name of Collectible3",
+      price: "0.253",
+    },
+    {
+      title: "Name of Collectible4",
+      description: "Name of Collectible3",
+      price: "0.253",
+    },
+    {
+      title: "Name of Collectible1",
+      description: "Name of Collectible1",
+      price: "0.251",
+    },
+    {
+      title: "Name of Collectible2",
+      description: "Name of Collectible2",
+      price: "0.252",
+    },
+    {
+      title: "Name of Collectible3",
+      description: "Name of Collectible3",
+      price: "0.253",
+    },
+    {
+      title: "Name of Collectible4",
+      description: "Name of Collectible3",
+      price: "0.253",
+    },
+  ]);
+
   return (
     <>
       <Head>
@@ -169,6 +264,7 @@ export default function Home() {
             <Image
               style={{ borderRadius: "11px" }}
               src="/unsplash_E8Ufcyxz514.png"
+              property=""
               alt="img1"
               width={385}
               height={425}
@@ -270,9 +366,66 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className={styles.groupbtn}></div>
+            <div className={styles.menu}>
+              <div className={styles.groupbtn}>
+                {listcategory.map((category, i) => {
+                  if (i === 0) {
+                    return (
+                      <button key={i} className={styles.btnactive}>
+                        {category.title}
+                      </button>
+                    );
+                  } else {
+                    return (
+                      <button key={i} className={styles.btnunactive}>
+                        {category.title}
+                      </button>
+                    );
+                  }
+                })}
+              </div>
+              <button className={styles.btnfilt}>
+                <FilterListIcon />
+                <p>Filters</p>
+              </button>
+            </div>
+            <div className={styles.groupcard}>
+              {listAmazeNFT.map((amazeNFT, index) => {
+                return <BidCard key={index} bidcard={amazeNFT} />;
+              })}
+            </div>
+            <button className={styles.btnmore}> More NFT&apos;s</button>
           </div>
-          <div className={styles.content5}></div>
+          <div className={styles.content5}>
+            <div className={styles.wizard}>
+              <div className={styles.wizardtitle}>
+                <p>Become a wizard with the</p>
+                <p> Coco NFT Academy</p>
+              </div>
+              <p className={styles.wizarddis}>
+                Head over to our NFT Academy to learn all about NFTs. Our team
+                is contantly developing new articles and videos to help you
+                better understand how to create, collect, sell, showcase your
+                digital assets.
+              </p>
+              <button className={styles.btnstart}>Start Learning</button>
+            </div>
+            <Image
+              src="/untitleddesign(3)1.png"
+              style={{ marginBottom: "110px" }}
+              alt="img1"
+              width={665}
+              height={632}
+            />
+            <Image
+              src="/untitleddesign(3)1.png"
+              style={{ marginBottom: "110px" }}
+              alt="img1"
+              width={487}
+              height={74}
+              className={styles.wizardavt}
+            />
+          </div>
         </div>
         <div className={styles.footer}></div>
       </main>

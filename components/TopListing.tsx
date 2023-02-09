@@ -40,7 +40,6 @@ import internal from "stream";
 // }
 
 export default function TopListing(props: any) {
-  console.log(props);
   return (
     <div className={styles.rank}>
       <p className={styles.ranktitle}>{props.toplisting.title}</p>
