@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import styles from "@/styles/Navbar.module.css";
+import styles from "@/styles/Navbar.module.scss";
 import Image from "next/image";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import { FormControl } from "@mui/material";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "@/styles/BidCard.module.css";
+import styles from "@/styles/BidCard.module.scss";
 import Image from "next/image";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 

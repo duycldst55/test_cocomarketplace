@@ -1,43 +1,6 @@
 import * as React from "react";
-import styles from "@/styles/TopListing.module.css";
+import styles from "@/styles/TopListing.module.scss";
 import Image from "next/image";
-import internal from "stream";
-
-// export interface TopListingProps {
-//   title: string;
-//   top: [
-//     {
-//       avatar: string;
-//       title: string;
-//       price: string;
-//       footer: Float32Array;
-//     },
-//     {
-//       avatar: string;
-//       title: string;
-//       price: string;
-//       footer: Float32Array;
-//     },
-//     {
-//       avatar: string;
-//       title: string;
-//       price: string;
-//       footer: Float32Array;
-//     },
-//     {
-//       avatar: string;
-//       title: string;
-//       price: string;
-//       footer: Float32Array;
-//     },
-//     {
-//       avatar: string;
-//       title: string;
-//       price: string;
-//       footer: Float32Array;
-//     }
-//   ];
-// }
 
 export default function TopListing(props: any) {
   return (
