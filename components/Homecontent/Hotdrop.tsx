@@ -5,8 +5,8 @@ import BidCard from "../BidCard";
 
 export function Hotdrop(props: any) {
   return (
-    <div className={styles.content2}>
-      <div className={styles.children3}>
+    <div className={styles.contenthotdrops}>
+      <div className={styles.hotdrops}>
         <p className={styles.hot}>HOT</p>
         <p className={styles.drops}>DROPS</p>
         <Image

@@ -6,7 +6,7 @@
   margin-top: 70px;
 }
 
-.children1 {
+.crecoll {
   display: flex;
   flex-direction: row;
   height: 122px;
@@ -31,7 +31,7 @@
   margin-left: 5px;
 }
 
-.i {
+.des {
   height: 30px;
   font-family: "Lato";
   font-style: normal;
@@ -47,7 +47,7 @@
   margin-top: 10px;
 }
 
-.content1 {
+.headline {
   height: 485;
   display: flex;
   flex-direction: row;
@@ -63,18 +63,18 @@
   top: 670px;
 }
 
-.children2 {
+.info {
   display: flex;
   flex-direction: column;
   margin-left: 60px;
 }
 
-.child1 {
+.groupbtn {
   display: flex;
   flex-direction: row;
 }
 
-.childchild {
+.btn {
   margin-right: 30px;
 }
 
@@ -115,7 +115,7 @@
   color: white;
 }
 
-.child2 {
+.title {
   font-family: "Lato-Black";
   font-style: normal;
   font-weight: 800;
@@ -124,19 +124,19 @@
   margin-top: 30px;
 }
 
-.child3 {
+.pricetime {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
 }
 
-.ch1 {
+.price {
   border-right: 1px solid #ededed;
   width: 150px;
   margin-right: 50px;
 }
 
-.ch2 {
+.time {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
